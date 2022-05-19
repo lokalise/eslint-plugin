@@ -1,0 +1,33 @@
+{
+  "name": "@lokalise/eslint-plugin",
+  "version": "1.0.0",
+  "description": "ESLint plugin for Lokalise",
+  "main": "index.js",
+  "author": "Lokalise",
+  "license": "MIT",
+  "files": [
+    "rules",
+    "index.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "eslint",
+    "imports",
+    "boundaries",
+    "javascript"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "babel-eslint": "^10.1.0",
+    "eslint-module-utils": "^2.7.3",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.0",
+    "requireindex": "^1.2.0"
+  }
+}
