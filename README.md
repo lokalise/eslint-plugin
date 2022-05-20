@@ -55,7 +55,7 @@ $ npm run test
 
 ## Supported Rules
 
-* `@lokalise/package-boundary`: Ensures all the imports and exports happen trough index.
+* [@lokalise/package-boundary](docs/rules/package-boundary.md): Ensures all the imports and exports happen through index.
 
 ## License
 
