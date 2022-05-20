@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/@lokalise/eslint-plugin)
 ![Downloads total](https://img.shields.io/npm/dt/@lokalise/eslint-plugin)
 
-## Installation
+## Install in your app
 
 You'll first need to install [ESLint](http://eslint.org):
 
@@ -17,7 +17,7 @@ Next, install `@lokalise/eslint-plugin`:
 $ npm i @lokalise/eslint-plugin --save-dev
 ```
 
-## Usage
+### Usage
 
 Add `@lokalise/eslint-plugin` to the plugins section of your `.eslintrc` configuration file.
 
@@ -39,9 +39,23 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
+## Local Development
+
+### Install Deps
+
+```
+$ npm i
+```
+
+### Run tests
+
+```
+$ npm run test
+```
+
 ## Supported Rules
 
-* `@lokalise/package-boundary`: Ensuresall the imports and exports happen trough index.
+* `@lokalise/package-boundary`: Ensures all the imports and exports happen trough index.
 
 ## License
 
