@@ -1,7 +1,4 @@
 /* eslint-disable */
-/**
- * This is temporary solution to the rule that's being proposed to `eslint-plugin-import`
- */
 const { dirname, relative, sep } = require('path');
 
 const { default: moduleVisitor, makeOptionsSchema } = require('eslint-module-utils/moduleVisitor');

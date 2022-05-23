@@ -1,3 +1,3 @@
 # Package Boundary
 
-Ensures all the imports and exports happen through index and not a different file.
+Ensures boundaries for modules are enforced. Boundaries are defined by presence of index file in the directory. Anything that can be consumed outside module boundary should be exported from the index file.
