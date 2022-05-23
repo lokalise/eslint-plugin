@@ -21,7 +21,7 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 1. Make sure the tests pass on your machine: `npm test`, note: these tests also apply the linter, so there's no need to lint separately.
 1. Create a new branch: `git checkout -b my-branch-name`.
 1. Make your change(s), add tests, add docs for the specific rules and make sure remaining tests still pass.
-1. Commit (we follow (conventional commits)[https://platform.uno/docs/articles/uno-development/git-conventional-commits.html] syntax), push and [submit a pull request][pr].
+1. Commit - we follow [conventional commits](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html) syntax -, push and [submit a pull request][pr].
 1. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
 Here are a few things you can do that will increase the likelihood of your pull request being accepted:
