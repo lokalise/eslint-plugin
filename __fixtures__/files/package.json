@@ -1,0 +1,7 @@
+{
+  "dummy": true,
+  "dependencies": {
+    "@org/package": "^1.0.0",
+    "esm-package": "^1.0.0"
+  }
+}
