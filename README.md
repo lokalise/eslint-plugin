@@ -53,6 +53,10 @@ $ npm i
 $ npm run test
 ```
 
+## How to contribute
+
+Follow our [guidelines](CONTRIBUTING.md)
+
 ## Supported Rules
 
 * [@lokalise/package-boundary](docs/rules/package-boundary.md): Ensures all the imports and exports happen through index.
