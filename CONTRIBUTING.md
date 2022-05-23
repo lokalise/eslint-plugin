@@ -2,6 +2,7 @@
 
 [fork]: /fork
 [pr]: /compare
+[release]: /release
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
 Hi there! We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great.
@@ -22,8 +23,8 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 1. Create a new branch: `git checkout -b my-branch-name`.
 1. Make your change(s), add necessary tests and add docs for the specific rules.
 1. Commit - we follow [conventional commits](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html) syntax -, push and [submit a pull request][pr].
-1. Pat your self on the back and wait for your pull request to be reviewed and merged.
-1. When merged
+1. Pat your self on the back and wait for your pull request to be reviewed.
+1. Merge Pull Request.
 
 Work in Progress pull requests are also welcome to get feedback early on, or if there is something blocked you.
 
