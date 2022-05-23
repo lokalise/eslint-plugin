@@ -1,8 +1,5 @@
 import path from 'path';
 
-// warms up the module cache. this import takes a while (>500ms)
-import 'babel-eslint';
-
 export function testFilePath(relativePath) {
     return path.join(__dirname, './__fixtures__/files', relativePath);
 }
@@ -23,7 +20,7 @@ export function test(t) {
                 {
                     sourceType: 'module',
                     ecmaVersion: 9,
-                    parser: require.resolve('babel-eslint'),
+                    parser: require.resolve('@babel/eslint-parser'),
                 },
                 t.parserOptions,
             ),
