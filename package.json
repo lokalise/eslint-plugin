@@ -25,7 +25,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "release-it"
   },
   "dependencies": {
     "eslint-module-utils": "^2.7.3",
@@ -42,6 +43,7 @@
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "husky": "^8.0.0",
-    "jest": "^28.1.0"
+    "jest": "^28.1.0",
+    "release-it": "^15.0.0"
   }
 }
