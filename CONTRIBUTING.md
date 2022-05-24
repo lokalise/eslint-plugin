@@ -18,12 +18,17 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 1. `npm install`.
 1. `npm test`.
 1. `git checkout -b my-branch-name`.
-1. Make your change(s), add necessary tests, add docs for the specific rules and bump the package using [SEMVER](https://semver.org/) approach.
-1. Commit - we follow [conventional commits](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html) syntax -, push and submit a pull request.
-1. Pat your self on the back and wait for your pull request to be reviewed.
-1. Squash and merge the pull request. The title needs to follow the [conventional commits](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html) syntax.
-1. Merge Pull Request.
-1. Draft a new [release][draft-release]. Add a new tag and also add `chore: release vx.x.x` to the title where x.x.x is the new version you are tagging. Auto generate the release notes.
+1. Make your change(s):
+    - Add necessary tests
+    - Add docs for the specific rules
+    - Bump the package using [SEMVER](https://semver.org/) approach.
+    - Commit ([conventional commits guidelines](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html)) and push
+1. Squash and merge the pull request in `main`.
+1. Release.
+    - Draft a new release
+    - Add a new tag based on your previous bump `vx.x.x`
+    - Add `chore: release vx.x.x` to the title of the release.
+    - Auto generate the release notes.
 1. Done 🚀
 
 Work in Progress pull requests are also welcome to get feedback early on, or if there is something blocked you.
