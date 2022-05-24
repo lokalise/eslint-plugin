@@ -3,7 +3,7 @@ on:
   release:
     types: [created]
 jobs:
-  build:
+  build-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,3 +19,16 @@ jobs:
         run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  generate-changelog:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: BobAnkh/auto-generate-changelog@master
+      with:
+        REPO_NAME: ''
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        PATH: 'CHANGELOG.md'
+        COMMIT_MESSAGE: 'docs(CHANGELOG): updated release notes'
+        TYPE: 'feat:Features,fix:Patches,docs:Documentation,refactor:Refactor,test:Tests,chore:Others'
