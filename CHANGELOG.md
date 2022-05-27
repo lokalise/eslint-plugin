@@ -1,49 +1,6 @@
 # CHANGELOG
 
-## [v1.1.0](https://github.com/lokalise/eslint-plugin/releases/tag/v1.1.0) - 2022-05-24 11:52:12
-
-## What's Changed
-* docs: add contribution release notes by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/8
-* feat: added conventional commits to PR Titles by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/9
-* docs: added release process in contributing.md by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/10
-* feat: added automated changelogs by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/11
-* fix: fixing automated changelog by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/12
-
-
-**Full Changelog**: https://github.com/lokalise/eslint-plugin/compare/v1.0.0...v1.1.0
-
-### Features
-
-- general:
-  - added automated changelogs (#11) ([14de364](https://github.com/lokalise/eslint-plugin/commit/14de364745be23b9595b26b68ef710023acb8ea4)) ([#11](https://github.com/lokalise/eslint-plugin/pull/11))
-  - added conventional commits to PR Titles (#9) ([bbbc9a1](https://github.com/lokalise/eslint-plugin/commit/bbbc9a14d9e5ffba8bdd2a3cffb4ba40dbd03887)) ([#9](https://github.com/lokalise/eslint-plugin/pull/9))
-
-### Patches
-
-- general:
-  - removed pr linting ([ce73416](https://github.com/lokalise/eslint-plugin/commit/ce73416cfbc0dba1f20d9bfc137939ec78b017d8))
-  - fixing automated changelog (#12) ([3e8b97f](https://github.com/lokalise/eslint-plugin/commit/3e8b97fbe915513f15306ff1b0006341e2b9b9be)) ([#12](https://github.com/lokalise/eslint-plugin/pull/12))
-
-### Documentation
-
-- general:
-  - added release process in contributing.md (#10) ([0f6e51f](https://github.com/lokalise/eslint-plugin/commit/0f6e51f83b49f007669e9b5039b1c613ffc899a4)) ([#10](https://github.com/lokalise/eslint-plugin/pull/10))
-  - add contribution release notes (#8) ([7d6b5ac](https://github.com/lokalise/eslint-plugin/commit/7d6b5ac008fca35cd388cb3e6bca20ecc2ff95ce)) ([#8](https://github.com/lokalise/eslint-plugin/pull/8))
-
 ## [v1.0.0](https://github.com/lokalise/eslint-plugin/releases/tag/v1.0.0) - 2022-05-23 19:33:26
-
-## What's Changed
-* BB-61 added eslint plugin by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/1
-* feat(linting): added support for conventional commits and husky by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/2
-* fix(linting): fixed contributing hyperlink for conventional commits by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/3
-* feat: added release-it to eslint-plugin #4 by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/5
-* fix: removed release-it by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/6
-* fix: added public npm option by @mascardoso in https://github.com/lokalise/eslint-plugin/pull/7
-
-## New Contributors
-* @mascardoso made their first contribution in https://github.com/lokalise/eslint-plugin/pull/1
-
-**Full Changelog**: https://github.com/lokalise/eslint-plugin/commits/v1.0.0
 
 ### Features
 
