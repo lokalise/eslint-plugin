@@ -22,19 +22,14 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
     - Add necessary tests
     - Add docs for the specific rules
     - Bump the package using [SEMVER](https://semver.org/) approach.
-    - Commit ([conventional commits guidelines](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html)) and push
+    - Commit and push your changes
 1. Squash and merge the pull request in `main`.
+    - The title of the PR needs to follow ([conventional commits guidelines](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html)) as it will be used for changelog purposes.
+    - If it is a breaking change include `!` next to the type of your commit as in `fix!: removed prop x`
 1. Release.
-    - Draft a new release
-    - Add a new tag based on your previous bump `vx.x.x`
-    - Add `chore: release vx.x.x` to the title of the release.
-    - Auto generate the release notes.
+    - Draft a [new release](https://github.com/lokalise/eslint-plugin/releases/new)
+    - Add a new tag based on [current main branch](https://github.com/lokalise/eslint-plugin/blob/main/package.json#L3) package version `vx.x.x`
+    - Add in description breaking changes related info if necessary
+    - Publish Release
+    - Confirm the new package was uploaded successfully in [npm](https://www.npmjs.com/package/@lokalise/eslint-plugin)
 1. Done 🚀
-
-Work in Progress pull requests are also welcome to get feedback early on, or if there is something blocked you.
-
-## Resources
-
-- [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
-- [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
-- [GitHub Help](https://help.github.com)
