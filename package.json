@@ -6,6 +6,7 @@
   "author": "Lokalise",
   "license": "MIT",
   "files": [
+    "docs/rules",
     "rules",
     "index.js",
     "package.json",
