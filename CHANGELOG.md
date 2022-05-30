@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/lokalise/eslint-plugin/compare/v1.2.0...v1.3.0) (2022-05-30)
+
+
+### Features
+
+* added docs folder in package.json ([a7bffa9](https://github.com/lokalise/eslint-plugin/commit/a7bffa9be8ebfce17b307645cc5b4c19135a2f3a))
+
 ## [1.2.0](https://github.com/lokalise/eslint-plugin/compare/v1.1.0...v1.2.0) (2022-05-30)
 
 

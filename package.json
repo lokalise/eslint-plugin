@@ -1,11 +1,12 @@
 {
   "name": "@lokalise/eslint-plugin",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "ESLint plugin for Lokalise",
   "main": "index.js",
   "author": "Lokalise",
   "license": "MIT",
   "files": [
+    "docs/rules",
     "rules",
     "index.js",
     "package.json",
