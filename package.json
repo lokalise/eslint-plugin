@@ -26,6 +26,12 @@
   "scripts": {
     "test": "jest"
   },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
+    }
+  },
   "dependencies": {
     "eslint-module-utils": "^2.7.3",
     "eslint-plugin-import": "^2.26.0",
@@ -38,6 +44,10 @@
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.17.12",
     "@babel/preset-typescript": "^7.17.12",
-    "jest": "^28.1.0"
+    "@commitlint/cli": "^17.0.1",
+    "@commitlint/config-conventional": "^17.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.0",
+    "standard-version": "^9.5.0"
   }
 }

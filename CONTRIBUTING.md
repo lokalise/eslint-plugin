@@ -1,6 +1,4 @@
-## Contributing
-
-[code-of-conduct]: CODE_OF_CONDUCT.md
+# Contributing
 
 Hi there! We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great.
 
@@ -12,24 +10,58 @@ If you have suggestions for how this project could be improved, or want to repor
 
 We'd also love PRs. If you're thinking of a large PR, we advise opening up an issue first to talk about it, though! Look at the links below if you're not sure how to open a PR.
 
-## Submitting a pull request
+## Submitting a Change
 
-1. Clone the repo.
-1. `npm install`.
-1. `npm test`.
-1. `git checkout -b my-branch-name`.
-1. Make your change(s):
-    - Add necessary tests
-    - Add docs for the specific rules
-    - Bump the package using [SEMVER](https://semver.org/) approach.
-    - Commit and push your changes
-1. Squash and merge the pull request in `main`.
-    - The title of the PR needs to follow ([conventional commits guidelines](https://platform.uno/docs/articles/uno-development/git-conventional-commits.html)) as it will be used for changelog purposes.
-    - If it is a breaking change include `!` next to the type of your commit as in `fix!: removed prop x`
-1. Release.
-    - Draft a [new release](https://github.com/lokalise/eslint-plugin/releases/new)
-    - Add a new tag based on [current main branch](https://github.com/lokalise/eslint-plugin/blob/main/package.json#L3) package version `vx.x.x`
-    - Add in description breaking changes related info if necessary
-    - Publish Release
-    - Confirm the new package was uploaded successfully in [npm](https://www.npmjs.com/package/@lokalise/eslint-plugin)
-1. Done 🚀
+- Clone the repo.
+- `npm install`.
+- `npm test`.
+- `git checkout -b my-branch-name`. Short, sweet, accurate and lower-case names are the best.
+
+---
+
+- Add your code changes.
+- Commit ([follow our conventions](#commit-message-convention)) and push.
+- Create PR, add Linked JIRA Ticket in description if necessary.
+- `npm run prepare-release` **IF**:
+    - CI ✅
+    - Code is Approved ✅
+    - Your branch is up-to-date with base branch ✅
+    - If code, modifies `dist` output ✅
+- Review changelog (refine commits if needed) and bumps. 
+- `git add . && git commit -am "chore: release vx.x.x" && git push origin HEAD` - **replace x.x.x with proper bump version**
+- Squash and merge the PR in `main`. Keep the title, delete the description.
+
+---
+
+- Draft a [new release](https://github.com/lokalise/mc_sandbox/releases/new) tagged with your [version](https://github.com/lokalise/mc_sandbox/blob/main/package.json#L3). Leave description empty. If your tag is not present, wait a bit and / or check if something went wrong on CI.
+- Publish Release 🚀
+- Confirm the new package was uploaded successfully in [npm](https://www.npmjs.com/package/@lokalise/eslint-plugin)
+
+## Commit Message Convention
+
+We follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+### Available Types
+
+- feat → Addition or removal of features. Eg: `feat: add table on landing page`, `feat: remove table from landing page`
+- fix → Bug fixing, followed by the bug. Eg: `fix: illustration overflows in mobile view`
+- docs → Updates on documentation (*.md).
+- chore → For releases.
+- refactor → Changes in code, same output, but different approach.
+- ci → Update github workflows, actions, linting.
+- test → Update unit tests.
+- revert → when reverting commits
+- perf → Fixing something regarding performance (deriving state, using memo, callback)
+
+### Breaking Changes
+
+- Append `!` to the type. Eg.
+```
+'feat!: removed prop variant on landing page'
+```
+- Add details if needed. Eg.
+```
+git commit -m 'feat!: removed prop variant on landing page
+
+BREAKING CHANGE: Use prop style instead.'
+```
