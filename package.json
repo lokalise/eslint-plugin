@@ -24,7 +24,9 @@
     "typescript"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare-release": "standard-version",
+    "prepare": "husky install"
   },
   "standard-version": {
     "skip": {
@@ -32,6 +34,10 @@
       "tag": true
     }
   },
+  "bugs": {
+    "url": "https://github.com/lokalise/eslint-plugin/issues"
+  },
+  "homepage": "https://github.com/lokalise/eslint-plugin#readme",
   "dependencies": {
     "eslint-module-utils": "^2.7.3",
     "eslint-plugin-import": "^2.26.0",
