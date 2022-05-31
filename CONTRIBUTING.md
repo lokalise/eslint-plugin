@@ -13,7 +13,7 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 ## Submitting a Change
 
 - Clone the repo.
-- `npm install`.
+- `npm install`
 - `npm test`.
 - `git checkout -b my-branch-name`. Short, sweet, accurate and lower-case names are the best.
 
