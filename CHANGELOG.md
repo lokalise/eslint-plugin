@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/lokalise/eslint-plugin/compare/v1.3.1...v1.4.0) (2022-09-23)
+
+
+### Features
+
+* validate absolute internal module paths as well ([9a0de4e](https://github.com/lokalise/eslint-plugin/commit/9a0de4e9b197e63632d664e82e0f22bf162c45c3))
+
 ### [1.3.1](https://github.com/lokalise/eslint-plugin/compare/v1.3.0...v1.3.1) (2022-05-31)
 
 

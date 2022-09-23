@@ -84,5 +84,16 @@ ruleTester.run('package-boundary', rule, {
                 },
             ],
         }),
+        test({
+            code: `import "a-module/sub-a-module/index.js"`,
+            filename: testFilePath('./package-boundary/a-module/file.js'),
+            errors: [
+                {
+                    message: 'Passing module boundary. Should import from `a-module`.',
+                    line: 1,
+                    column: 8,
+                },
+            ],
+        }),
     ],
 });

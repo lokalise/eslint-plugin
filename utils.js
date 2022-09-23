@@ -6,6 +6,8 @@ export function testFilePath(relativePath) {
 
 const FILENAME = testFilePath('foo.js');
 
+const packageDir = __dirname;
+
 export function test(t) {
     if (arguments.length !== 1) {
         throw new SyntaxError('`test` requires exactly one object argument');
@@ -24,6 +26,17 @@ export function test(t) {
                 },
                 t.parserOptions,
             ),
+            settings: {
+                'import/internal-regex': /^\w-module/,
+                'import/resolver': {
+                    'node': {
+                        paths: [
+                            path.join(packageDir, '__fixtures__', 'files', 'package-boundary'),
+                            path.join(packageDir, 'node_modules'),
+                        ],
+                    },
+                },
+            },
         },
     );
 }
