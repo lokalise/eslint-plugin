@@ -1,6 +1,6 @@
 import { RuleTester } from 'eslint';
 import rule from '../rules/package-boundary';
-import { test as _test, testFilePath } from '../utils';
+import { test as _test, testFilePath } from './utils';
 
 const test = (def) =>
     _test({
@@ -57,9 +57,15 @@ ruleTester.run('package-boundary', rule, {
             code: 'import "./a-module/file.js"',
             errors: [
                 {
-                    message: 'Passing module boundary. Should import from `./a-module`.',
+                    message: 'Passing module boundary',
                     line: 1,
                     column: 8,
+                    suggestions: [
+                        {
+                            desc: 'Change import to `./a-module`',
+                            output: 'import "./a-module"'
+                        },
+                    ],
                 },
             ],
         }),
@@ -67,9 +73,15 @@ ruleTester.run('package-boundary', rule, {
             code: 'import "./a-module/sub-a-module/index.js"',
             errors: [
                 {
-                    message: 'Passing module boundary. Should import from `./a-module`.',
+                    message: 'Passing module boundary',
                     line: 1,
                     column: 8,
+                    suggestions: [
+                        {
+                            desc: 'Change import to `./a-module`',
+                            output: 'import "./a-module"'
+                        },
+                    ],
                 },
             ],
         }),
@@ -78,9 +90,15 @@ ruleTester.run('package-boundary', rule, {
             filename: testFilePath('./package-boundary/b-module/file.js'),
             errors: [
                 {
-                    message: 'Passing module boundary. Should import from `../a-module`.',
+                    message: 'Passing module boundary',
                     line: 1,
                     column: 8,
+                    suggestions: [
+                        {
+                            desc: 'Change import to `../a-module`',
+                            output: 'import "../a-module"'
+                        },
+                    ],
                 },
             ],
         }),
@@ -89,9 +107,15 @@ ruleTester.run('package-boundary', rule, {
             filename: testFilePath('./package-boundary/a-module/file.js'),
             errors: [
                 {
-                    message: 'Passing module boundary. Should import from `a-module`.',
+                    message: 'Passing module boundary',
                     line: 1,
                     column: 8,
+                    suggestions: [
+                        {
+                            desc: 'Change import to `a-module`',
+                            output: 'import "a-module"'
+                        },
+                    ],
                 },
             ],
         }),

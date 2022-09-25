@@ -1,12 +1,12 @@
 import path from 'path';
 
+const packageDir = path.resolve(__dirname, '..');
+
 export function testFilePath(relativePath) {
-    return path.join(__dirname, './__fixtures__/files', relativePath);
+    return path.join(packageDir, '__fixtures__', 'files', relativePath);
 }
 
 const FILENAME = testFilePath('foo.js');
-
-const packageDir = __dirname;
 
 export function test(t) {
     if (arguments.length !== 1) {
