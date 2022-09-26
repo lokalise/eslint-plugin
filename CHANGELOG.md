@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/lokalise/eslint-plugin/compare/v1.4.0...v1.5.0) (2022-09-26)
+
+
+### Features
+
+* add suggestions to boundary rule ([#21](https://github.com/lokalise/eslint-plugin/issues/21)) ([6cd8d65](https://github.com/lokalise/eslint-plugin/commit/6cd8d6523b26d2fe5cca9ffc039d0cf6e4ae14fd))
+* fix import paths ([#20](https://github.com/lokalise/eslint-plugin/issues/20)) ([c04f7fa](https://github.com/lokalise/eslint-plugin/commit/c04f7fa022ac9efb00f8e91906a52d0d035ce296))
+
 ## [1.4.0](https://github.com/lokalise/eslint-plugin/compare/v1.3.1...v1.4.0) (2022-09-23)
 
 
