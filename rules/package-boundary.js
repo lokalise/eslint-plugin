@@ -1,5 +1,5 @@
 /* eslint-disable */
-const { dirname, relative, sep, join } = require('path');
+const { dirname, relative, sep } = require('path');
 
 const { default: moduleVisitor, makeOptionsSchema } = require('eslint-module-utils/moduleVisitor');
 const { default: resolve } = require('eslint-module-utils/resolve');
@@ -11,6 +11,7 @@ module.exports = {
     meta: {
         type: 'suggestion',
         schema: [makeOptionsSchema()],
+        hasSuggestions: true,
     },
 
     create: function moduleBoundary(context) {
@@ -39,7 +40,7 @@ module.exports = {
 
             for (const path of segments) {
                 currentPath.push(path);
-                const importPath = join(...currentPath)
+                const importPath = currentPath.join(sep)
 
                 if (path === '..') {
                     // don't check relative imports from parent
@@ -57,7 +58,7 @@ module.exports = {
                     // One of the ascendant directories resolved to an index file
                     const relativeImportPath = isRelativeImport ? relative(dirname(myPath), resolvedImportFile) : importPath;
 
-                    const normalisedRelativeImportPath = join('.', relativeImportPath).toLowerCase();
+                    const normalisedRelativeImportPath = ['.', relativeImportPath].join(sep).toLowerCase();
                     if (isRelativeImport && normalisedRelativeImportPath.indexOf(importPath.toLowerCase() + sep) !== 0) {
                         // In case resolved import path is NOT index file inside desired directory
                         // Happens when there's both folder and file with the same module name. In this case
@@ -70,7 +71,15 @@ module.exports = {
                     ).replace(/\/index\.(js|jsx|ts|tsx)$/, '');
                     context.report({
                         node: sourceNode,
-                        message: `Passing module boundary. Should import from \`${recommendedImportPath}\`.`,
+                        message: 'Passing module boundary',
+                        suggest: [
+                            {
+                                desc: `Change import to \`${recommendedImportPath}\``,
+                                fix: function(fixer) {
+                                    return fixer.replaceTextRange(sourceNode.range, `"${recommendedImportPath}"`);
+                                }
+                            }
+                        ]
                     });
                     break;
                 }
