@@ -35,6 +35,7 @@ Then configure the rules you want to use under the rules section.
 {
     "rules": {
         "@lokalise/package-boundary": "error",
+        "@lokalise/relative-internal-imports": "error"
     }
 }
 ```
@@ -60,6 +61,7 @@ Follow our [guidelines](CONTRIBUTING.md)
 ## Supported Rules
 
 * [@lokalise/package-boundary](docs/rules/package-boundary.md): Ensures all the imports and exports happen through index.
+* [@lokalise/relative-internal-imports](docs/rules/relative-internal-imports.md): Ensures module internal imports are relative.
 
 ## License
 
