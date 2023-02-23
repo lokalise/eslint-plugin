@@ -52,7 +52,9 @@ ruleTester.run('relative-internal-imports', rule, {
             ],
         }),
         test({
-            filename: testFilePath('./internal-modules/a-module/sub-a-module/file.js'),
+            filename: testFilePath(
+                './internal-modules/a-module/sub-a-module/file.js',
+            ),
             code: 'import "a-module/file.js"',
             output: 'import "../file.js"',
             errors: [

@@ -63,7 +63,7 @@ ruleTester.run('package-boundary', rule, {
                     suggestions: [
                         {
                             desc: 'Change import to `./a-module`',
-                            output: 'import "./a-module"'
+                            output: 'import "./a-module"',
                         },
                     ],
                 },
@@ -79,7 +79,7 @@ ruleTester.run('package-boundary', rule, {
                     suggestions: [
                         {
                             desc: 'Change import to `./a-module`',
-                            output: 'import "./a-module"'
+                            output: 'import "./a-module"',
                         },
                     ],
                 },
@@ -96,7 +96,7 @@ ruleTester.run('package-boundary', rule, {
                     suggestions: [
                         {
                             desc: 'Change import to `../a-module`',
-                            output: 'import "../a-module"'
+                            output: 'import "../a-module"',
                         },
                     ],
                 },
@@ -113,7 +113,7 @@ ruleTester.run('package-boundary', rule, {
                     suggestions: [
                         {
                             desc: 'Change import to `a-module`',
-                            output: 'import "a-module"'
+                            output: 'import "a-module"',
                         },
                     ],
                 },
