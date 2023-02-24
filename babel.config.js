@@ -4,13 +4,6 @@ module.exports = (api) => {
     return {
         presets: [
             [
-                '@babel/preset-typescript',
-                {
-                    allowDeclareFields: true,
-                    onlyRemoveTypeImports: true,
-                },
-            ],
-            [
                 '@babel/preset-env',
                 {
                     targets: 'node 16',
