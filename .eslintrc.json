@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@lokalise/lokalise-frontend/core",
+    "@lokalise/lokalise-frontend/jest"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.js"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}
