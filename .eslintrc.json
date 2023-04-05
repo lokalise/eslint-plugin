@@ -1,7 +1,7 @@
 {
   "extends": [
-    "@lokalise/lokalise-frontend/core",
-    "@lokalise/lokalise-frontend/jest"
+    "@lokalise/frontend/core",
+    "@lokalise/frontend/jest"
   ],
   "overrides": [
     {
