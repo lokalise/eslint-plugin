@@ -66,6 +66,6 @@
     "husky": "^8.0.1",
     "jest": "^29.4.3",
     "prettier": "^2.8.4",
-    "semantic-release": "^21.0.0"
+    "semantic-release": "^22.0.1"
   }
 }
