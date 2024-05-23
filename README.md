@@ -3,6 +3,8 @@
 ![npm](https://img.shields.io/npm/v/@lokalise/eslint-plugin)
 ![Downloads total](https://img.shields.io/npm/dt/@lokalise/eslint-plugin)
 
+[eslint-config-frontend](https://github.com/lokalise/eslint-config-frontend) should be used instead.
+
 ## Install in your app
 
 You'll first need to install [ESLint](http://eslint.org):
